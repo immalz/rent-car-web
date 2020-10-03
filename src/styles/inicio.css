@@ -1,4 +1,4 @@
-:root {
+    :root {
     --rojo: #fc5c65;
     --gris-claro: #f1f1f1;
     --negro: #001a21;
@@ -148,7 +148,7 @@ select {
 
 .ventajas div {
     width: 40%;
-    display: flex;
+        
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -191,4 +191,14 @@ select {
     .ventajas p {
         font-size: 14px;
     }
+}
+
+.toyota div{
+    color: gray;
+    
+}
+.toyotainfo div{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }

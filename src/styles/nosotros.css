@@ -1,0 +1,15 @@
+:root {
+    --blanco: #fff;
+    --gris: #f7f4f4;
+    --negro: #000;
+    --amarillo: #fee648;
+    --rojo: #fc5c65;
+    --verde: #40FF00;
+    --verde-claro: #84ff5c;
+}
+
+table h1 {
+    color: var(--rojo);
+    font-weight: 800;
+    font-size: 30px;
+}

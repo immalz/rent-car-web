@@ -1,0 +1,37 @@
+button {
+    border: none;
+    width: 200px;
+    background: #FA9F03;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f7ac2c;
+}
+
+button a {
+    color: white;
+}
+
+.main {
+    width: 80%;
+    height: calc(100vh - 80px);
+    margin: auto;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space;
+    align-items: center;
+}
+
+.contenido__imagen {
+    width: 50%;
+}
+
+.contenido__imagen img {
+    width: 100%;
+}

@@ -4,6 +4,7 @@
     --blanco: #fff;
     --negro: #000;
     --amarillo: #fee648;
+    --rojo: #fc5c65;
 }
 
 nav {
@@ -17,7 +18,7 @@ nav {
     flex-wrap: wrap;
     position: fixed;
     z-index: 6;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 nav .logo img {
@@ -50,7 +51,7 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
     color: #fff;
-    background: var(--negro);
+    background: var(--rojo);
 }
 
 nav .menu-btn i {

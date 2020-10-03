@@ -5,39 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro | Viaje ya!</title>
+    <link rel="icon" type="image/png" href="../images/logo-empresa.png" />
     <link rel="stylesheet" href="../styles/login.css">
-    <link rel="stylesheet" href="../styles/reutilizables/barra-navegacion.css">
     <link rel="stylesheet" href="../styles/reutilizables/estilos-basicos.css">
     <link rel="stylesheet" href="../styles/reutilizables/footer.css">
 </head>
 
 <body class="body">
-    <nav>
-        <a href="../index.html" class="logo">
-            <img src="../images/logo-empresa.png" alt="Viaje ya!">
-        </a>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./nosotros.html">Quienes somos</a></li>
-            <li><a href="./flota.html">Flota</a></li>
-            <li><a href="./reserva.html">Reserva</a></li>
-            <li><a class="active" href="#">Registrarse</a></li>
-        </ul>
-    </nav>
-
-    <div class="espacio" style="height: 80px;"></div>
     <section>
         <div class="container">
             <div class="user singinBx">
                 <div class="imgBx"><img src="../images/login.webp"></div>
                 <div class="formBx">
-                    <form action="../index.html">
+                    <form action="" id="formulario">
                         <h2>Inicia Sesion</h2>
                         <input id="usuario" type="text" name="usuario" placeholder="Nombre de Usuario" required>
                         <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required>
-                        <input type="submit" name="" value="Ingresar" onclick="validarUsuario()">
+                        <input id="enviar" type="submit" name="" value="Ingresar">
                         <p class="signup">¿Aun no tienes una cuenta?
                             <a href="#" onclick="toggleForm();">Registrate</a>
                         </p>
@@ -54,7 +38,7 @@
                         <input type="password" name="repetir-contraseña" placeholder="Confirmar contraseña" required>
                         <input type="submit" name="" value="Registrar">
                         <p class="signup">¿Ya tienes una cuenta?
-                            <a href="#" onclick="toggleForm();">Inicia Sesion</a>
+                            <a id="registrar" href="#" onclick="toggleForm();">Inicia Sesion</a>
                         </p>
                     </form>
                 </div>
@@ -65,7 +49,7 @@
     <footer>
         <div class="footer-container">
             <div class="columna-izquierda">
-                <img src="./images/logo-empresa.png" alt="Viaje ya!" class="logo">
+                <img src="../images/logo-empresa.png" alt="Viaje ya!" class="logo">
                 <div class="social-media">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -90,19 +74,8 @@
             let container = document.querySelector('.container');
             container.classList.toggle('active')
         }
-
-        function validarUsuario() {
-            let usuario = document.getElementById('usuario').value;
-            let constraseña = document.getElementById('constraseña').value;
-
-            if (usuario == 'marco' && contraseña == 'alzamora') {
-                alert('Usuario y contraseña correcto')
-                window.location.href('../index.html')
-            } else {
-                alert('Usuario incorrecto!, por favor vuelva a intentarlo')
-            }
-        }
     </script>
+    <script type="text/javascript" src="../js/validarFormulario.js"></script>
 
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
