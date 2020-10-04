@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaje ya! | Inventario</title>
-    <link rel="icon" type="image/png" href="../images/logo-empresa.png" />
     <link rel="stylesheet" href="../styles/inventario.css">
     <link rel="stylesheet" href="../styles/reutilizables/general.css">
     <link rel="stylesheet" href="../styles/reutilizables/header.css">
@@ -13,24 +12,115 @@
 </head>
 
 <body>
-    <nav>
-        <a href="#" class="logo">
-            <img src="../images/logo-empresa.png" alt="Viaje ya!">
-        </a>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a class="active" href="#">Inventario</a></li>
-            <li><a href="./reserva.html">Reservas</a></li>
-            <li><a href="./usuarios.html">Usuarios</a></li>
-            <li><a href="./calendario.html">Calendario</a></li>
-        </ul>
-    </nav>
-    <div class="espacio" style="height: 80px;"></div>
+    <h1>CONTROL DE FLOTA</h1>
+    <div class="container">
+        <!--SECCION PRINCIPAL-->
+        <section class="guardar-vehiculo">
+            <h2>Añadir un vehiculo</h2>
+            <form action="">
+                <input id="nombre" type="text" placeholder="nombre" required>
+                <input id="capacidad" type="number" placeholder="capacidad" required>
+                <input id="descripcion" type="text" placeholder="descripcion" required>
+                <input id="color" type="text" placeholder="color" required>
+                <input id="precio" type="text" placeholder="precio diario" required>
+                <input id="guardar-vehiculo" type="submit" value="GUARDAR">
+            </form>
+        </section>
+        <section class="principal">
+            <div class="flota" id="flota">
+                <!--PRIMER AUTO-->
+
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen">
+                        <img src="../../images/toyota.png" width="40%" alt="toyota" class="flotaimg">
+                    </div>
+                    <div class="tarjeta__descripcion">
+                        <h2>Toyota</h2>
+                        <p><b>Capacidad maxima:</b> 5</p>
+                        <p><b>descripcion:</b> <br>Vehiculo del año 2019,carroceria tipo turismo </p>
+                        <p><b>colores:</b> neegro y gris</p>
+                        <p><b>precio*dia:</b> 150</p>
+                        <button><a class="eliminar"href="../pages/login.html">Remover</a></button>
+                    </div>
+                </div>
 
 
+                <!--SEGUNDO AUTO-->
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen">
+                        <img src="../../images/bus.png" width="40%" alt="toyota" class="flotaimg">
+                    </div>
+                    <div class="tarjeta__descripcion">
+                        <h2>bus</h2>
+                        <p><b>Capacidad maxima:</b>36</p>
+                        <p><b>descripcion:</b> <br>Vehiculo del año 2019 </p>
+                        <p><b>colores:</b> amarillo y gris</p>
+                        <p><b>precio*dia:</b> 450</p>
+                        <button><a class="eliminar" href="../pages/login.html">Remover</a></button>
+                    </div>
+                </div>
 
+
+                <!--TERCERO AUTO-->
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen">
+                        <img src="../../images/vanh1.png" width="40%" alt="toyota" class="flotaimg">
+                    </div>
+                    <div class="tarjeta__descripcion">
+                        <h2>van</h2>
+                        <p><b>Capacidad maxima:</b>8</p>
+                        <p><b>descripcion:</b> <br>Vehiculo del año 2020 </p>
+                        <p><b>colores:</b> gris y blanco</p>
+                        <p><b>precio*dia:</b> 250</p>
+                        <button><a class="eliminar"href="../pages/login.html">Remover</a></button>
+                    </div>
+                </div>
+
+                <!--CUARTO AUTO-->
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen">
+                        <img src="../../images/minibus.png" width="40%" alt="toyota" class="flotaimg">
+                    </div>
+                    <div class="tarjeta__descripcion">
+                        <h2>Minibus</h2>
+                        <p><b>Capacidad maxima:</b>26</p>
+                        <p><b>descripcion:</b> <br>Vehiculo del año 2018 </p>
+                        <p><b>colores:</b> neegro y gris</p>
+                        <p><b>precio*dia:</b> 300</p>
+                        <button><a  class="eliminar" href="../pages/login.html">Remover</a></button>
+                    </div>
+                </div>
+                <!--QUINTO AUTO-->
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen">
+                        <img src="../../images/sprinter.webp" width="40%" alt="toyota" class="flotaimg">
+                    </div>
+                    <div class="tarjeta__descripcion">
+                        <h2>Camioneta</h2>
+                        <p><b>Capacidad maxima:</b>10</p>
+                        <p><b>descripcion:</b> <br>Vehiculo del año 2020,carroceria tipo turismo </p>
+                        <p><b>colores:</b> gris</p>
+                        <p><b>precio*dia:</b> 200</p>.
+                        <button><a  class="eliminar"href="../pages/login.html">Remover</a></button>
+                    </div>
+                </div>
+                <!--SEXTO AUTO-->
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen">
+                        <img src="../../images/bus2.png" width="40%" alt="toyota" class="flotaimg">
+                    </div>
+                    <div class="tarjeta__descripcion">
+                        <h2>Bus Modasa</h2>
+                        <p><b>Capacidad maxima:</b>56</p>
+                        <p><b>descripcion:</b> <br>Vehiculo del año 2019, dos pisos </p>
+                        <p><b>colores:</b> neegro y gris</p>
+                        <p><b>precio*dia:</b> 600</p>
+                        <button><a class="eliminar"href="../pages/login.html">Remover</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
     <!--FOOTER-->
@@ -45,6 +135,7 @@
             <p class="rights-text">© 2020 Empresa de Transporter Viaje ya!</p>
         </div>
     </footer>
+    <script src="../../js/inventario.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 

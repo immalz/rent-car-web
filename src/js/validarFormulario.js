@@ -5,12 +5,13 @@ let enviar = document.getElementById('enviar');
 
 let form = document.getElementById('formulario');
 
-form.addEventListener('submit', function(evt) {
-    evt.preventDefault();
-
-
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
     if (usuario.value === 'marcoalz' && contraseña.value === 'visitante') {
-        alert('usuario correcto')
+        alert('Login existoso, sera redirigido a la pagina principal')
+        location.href = '../pages/inicio.html';
+    } else if (usuario.value === 'admin123' && contraseña.value === 'administrador') {
+        location.href = '../admin/pages/inicio.html';
     } else {
         alert('Usuario Incorrecto, intentelo de nuevo');
     }

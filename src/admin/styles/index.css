@@ -1,4 +1,4 @@
-button {
+.btn-salir {
     border: none;
     width: 200px;
     background: #FA9F03;
@@ -8,11 +8,27 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn-activar {
+    border-radius: 10px;
+    border: none;
+    background: #FA9F03;
+    padding: 15px 70px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.btn-activar:hover,
+.btn-salir:hover {
     background-color: #f7ac2c;
 }
 
-button a {
+.btn-activar a,
+.btn-salir a {
     color: white;
 }
 
@@ -24,14 +40,34 @@ button a {
 
 .contenido {
     display: flex;
-    justify-content: space;
+    justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .contenido__imagen {
     width: 50%;
+    animation: imagen 2s linear infinite;
+}
+
+@keyframes imagen {
+    from {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: none;
+    }
 }
 
 .contenido__imagen img {
-    width: 100%;
+    width: 90%;
+}
+
+@media (max-width: 1200px) {
+    .contenido {
+        flex-wrap: wrap;
+    }
 }
