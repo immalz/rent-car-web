@@ -12,74 +12,79 @@
 </head>
 
 <body>
-    <div class="container">
-        <div style="display: flex; align-items: center; text-align:center; height: 70vh;">
-            <table style="margin: 0 auto;" border="1" width="60%">
-                <tr>
-                    <td>
-                        <form name="prb" method="post" action="datos.html">
-                            <p>
-                                <h1 align="center">RESERVACION</h1>
-                            </p>
-                            <FIELDSET>
-                                <p>Destino<select name="cbdestino">
-                                    <option value="0">..... </option>
-                                    <option value="1">Ancash </option>
-                                    <option value="2">Apurimac </option>
-                                    <option value="3">Arequipa </option>
-                                    <option value="4">Ayacucho</option>
-                                    <option value="5">Cajamarca </option>
-                                    <option value="6">Callao </option>
-                                    <option value="7">Cusco </option>
-                                    <option value="8">Huancavelica </option>
-                                    <option value="9">Huanuco </option>
-                                    <option value="10">Ica </option>
-                                    <option value="11">Junin </option>
-                                    <option value="12">La Libertad </option>
-                                    <option value="13">Lambayeque </option>
-                                    <option value="14">Lima </option>
-                                    <option value="15">Loreto </option>
-                                    <option value="16">Madre de Dios </option>
-                                    <option value="17">Pasco </option>
-                                    <option value="18">Piura </option>
-                                    <option value="19">San Martin</option>
-                                    <option value="20">Tacana</option>
-                                    <option value="21">Tumbes</option>
-                                    <option value="22">Ucayali</option>
-                                    </select></p>
-                                <p>:Fecha<input type="date" name="txtfecha"></p>
-                                <p>Hora: <input type="text" name="txthor"></p>
-                                <p>Cantidad de personas:
-                                    <select name="cbcantidad">
-                                        <option value="0">...</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="4">5 a mas personas</option>
-                                    </select>
-                                </p>
-                                <p>Tipo de vehiculo : <input type="radio" name="rdtip" value="carro">Carro
-                                    <input type="radio" name="rdtip" value="bus">Bus</p>
-                                <p>Nombre y Apellido: <input type="text" name="txtnom"></p>
-                                <p>Correo electronico: <input type="email" name="txtcor"></p>
-                                <p>Numero de contacto: <input type="text" name="texnum"></p>
-                                <p>Punto de encuentro: <input type="text" name="texpun"></p>
-                                <p>Lleva objetos : <input type="radio" name="rdlle" value="Si">Si
-                                    <input type="radio" name="rdlle" value="No">No</p>
-                                <p>Forma de pago: <input type="radio" name="rdpar" value="Contado">Contado
-                                    <input type="radio" name="rdpar" value="Visa">Visa</p>
-                                <p>
-                                    Acepto Términos y condiciones.<br>
-                                    <input type="checkbox" name="chdatos" value="Acepto" required>Acepto
-
-                            </FIELDSET>
-                        </form>
-                    </td>
-                </tr>
-            </table>
+    <section class="centro">
+        <div class="formulario">
+            <form id="enviar" action="">
+                <div class="formulario__derecho">
+                    <p>Nombre y Apellido:</p>
+                    <input type="text" name="txtnom" required>
+                    <p>Correo electronico:</p>
+                    <input type="email" name="txtcor" required>
+                    <p>Numero de contacto:</p>
+                    <input type="number" name="texnum" required>
+                    <p>Punto de encuentro: </p>
+                    <input type="text" name="texpun" required>
+                    <p>Lleva objetos : <input type="radio" name="rdlle" value="Si">Si
+                        <input type="radio" name="rdlle" value="No">No</p>
+                    <p>Forma de pago: <input type="radio" name="rdpar" value="Contado">Contado
+                        <input type="radio" name="rdpar" value="Visa">Visa</p>
+                </div>
+                <div class="formulario__izquierdo">
+                    <p>Destino</p>
+                    <select name="cbdestino" required>
+                        <option value="0">..... </option>
+                        <option value="1">Ancash </option>
+                        <option value="2">Apurimac </option>
+                        <option value="3">Arequipa </option>
+                        <option value="4">Ayacucho</option>
+                        <option value="5">Cajamarca </option>
+                        <option value="6">Callao </option>
+                        <option value="7">Cusco </option>
+                        <option value="8">Huancavelica </option>
+                        <option value="9">Huanuco </option>
+                        <option value="10">Ica </option>
+                        <option value="11">Junin </option>
+                        <option value="12">La Libertad </option>
+                        <option value="13">Lambayeque </option>
+                        <option value="14">Lima </option>
+                        <option value="15">Loreto </option>
+                        <option value="16">Madre de Dios </option>
+                        <option value="17">Pasco </option>
+                        <option value="18">Piura </option>
+                        <option value="19">San Martin</option>
+                        <option value="20">Tacana</option>
+                        <option value="21">Tumbes</option>
+                        <option value="22">Ucayali</option>
+                </select>
+                    <p>Fecha:</p>
+                    <input type="date" name="txtfecha" required>
+                    <div class="horas">
+                        <div class="horas__derecha">
+                            <p>Hora de recojo:</p>
+                            <input type="time" name="txthor" required>
+                        </div>
+                        <div class="horas__izquierda">
+                            <p>Hora de entrega:</p>
+                            <input type="time" name="txthor" required>
+                        </div>
+                    </div>
+                    <p>Cantidad de personas:</p>
+                    <select name="cbcantidad" required>
+                        <option value="0">...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="4">5 a mas personas</option>
+                    </select>
+                    <p>Tipo de vehiculo: <input type="radio" name="rdtip" value="carro">Automovil
+                        <input type="radio" name="rdtip" value="bus">Bus</p>
+                    <p><input type="checkbox" name="chdatos" value="Acepto" required> Acepto Términos y condiciones</p>
+                    <input type="submit" value="RESERVAR">
+                </div>
+            </form>
         </div>
-    </div>
+    </section>
     <!--FOOTER-->
     <footer>
         <div class="footer-container">
@@ -104,6 +109,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/reserva.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 

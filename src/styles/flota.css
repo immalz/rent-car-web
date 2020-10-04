@@ -4,8 +4,8 @@
     --negro: #000;
     --amarillo: #fee648;
     --rojo: #fc5c65;
-    --verde: #40FF00;
-    --verde-claro: #84ff5c;
+    --verde: #00ff73;
+    --verde-claro: #40FF00;
 }
 
 .principal {
@@ -54,6 +54,11 @@
 .tarjeta__imagen img {
     width: 100%;
     height: 80%;
+    transition: .7s ease;
+}
+
+.tarjeta__imagen img:hover {
+    transform: scale(1.2);
 }
 
 .tarjeta__descripcion {

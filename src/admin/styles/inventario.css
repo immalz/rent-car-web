@@ -14,17 +14,22 @@
     display: flex;
     justify-content: space-around;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .principal {
     width: 70%;
-    margin: auto;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .guardar-vehiculo {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 h1 {
@@ -44,12 +49,15 @@ h1 {
 }
 
 .tarjeta {
-    width: 550px;
+    width: 500px;
     height: 320px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
     margin-bottom: 10px;
     background: var(--gris);
+    transition: .4s ease;
 }
 
 .tarjeta:hover {
@@ -58,17 +66,27 @@ h1 {
 
 .tarjeta__imagen {
     width: 50%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .tarjeta__imagen img {
     width: 100%;
-    height: 80%;
+    height: 60%;
+    transition: .7s ease;
+}
+
+.tarjeta__imagen img:hover {
+    transform: scale(1.2);
 }
 
 .tarjeta__descripcion {
     width: 50%;
+    margin-left: 40px;
 }
 
 .tarjeta__descripcion h2 {
@@ -94,7 +112,7 @@ button {
     border-radius: 20px;
     margin: 10px 30px;
     cursor: pointer;
-    transition: .3s linear;
+    transition: .2s linear;
 }
 
 button a {
@@ -103,24 +121,31 @@ button a {
 
 button:hover {
     background: var(--rojo-fuerte);
+    transform: scale(1.1);
 }
 
 .guardar-vehiculo h2 {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
+    color: var(--rojo);
 }
 
 .guardar-vehiculo form {
     width: 400px;
+    height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
-    padding: 40px;
+    padding: 20px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.guardar-vehiculo form img {
+    width: 80px;
+    margin: auto;
 }
 
 .guardar-vehiculo form input {
@@ -132,6 +157,7 @@ button:hover {
     font-size: 15px;
     color: #686868;
     font-weight: 300;
+    border-radius: 7px;
 }
 
 .guardar-vehiculo form input[type="submit"] {
