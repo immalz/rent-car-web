@@ -12,6 +12,91 @@
 </head>
 
 <body>
+    <h1>CONTROL DE RESEVA</h1>
+    <div class="container">
+        <!--SECCION PRINCIPAL-->
+
+        <section class="filtrar-reserva">
+            <h2>Filtrar Reserva</h2>
+            <form action="" id="formulario">
+                <img src="../images/logo-empresa.png" alt="viaje ya!">
+                <p>Filtrar por:</p>
+                <select id="tipo-filtro" name="tipo" onchange="">
+                                <option value="op1">Codigo Cliente</option>
+                                <option value="op2">Codigo Vehiculo</option>
+                                <option value="op3">Fecha</option>
+                        </select>
+                <!--prueba-->
+                <input id="combo-seleccion" type="text" name="seleccion" placeholder="filtro">
+                <!--FIN-->
+                <input id="reserva-filtro" type="submit" value="FLITRAR">
+            </form>
+        </section>
+
+        <section class="principal">
+            <div class="reserva" id="reserva">
+                <!--PRIMER AUTO-->
+
+                <div class="tarjeta">
+                    <div class="tarjeta__descripcion">
+                        <p><b>Codigo Cliente: </b>CL001</p>
+                        <p><b>Codigo Vehiculo: </b>VH001</p>
+                        <p><b>Fecha: </b>01/10/2020</p>
+                        <p><b>Punto de salida: </b>SMP</p>
+                        <p><b>Punto de llegada: </b>Lince</p>
+                        <p><b>Hora de recojo: </b>16:00</p>
+                        <p><b>Hora de entrega: </b>18:00</p>
+                        <button><a class="eliminar"href="#">CANCELAR</a></button>
+                    </div>
+                </div>
+
+
+                <!--SEGUNDO AUTO-->
+                <div class="tarjeta">
+                    <div class="tarjeta__descripcion">
+                        <p><b>Codigo Cliente: </b>CL002</p>
+                        <p><b>Codigo Vehiculo: </b>VH002</p>
+                        <p><b>Fecha: </b>20/10/2020</p>
+                        <p><b>Punto de salida: </b>SJL</p>
+                        <p><b>Punto de llegada: </b>Comas</p>
+                        <p><b>Hora de recojo: </b>08:00</p>
+                        <p><b>Hora de entrega: </b>20:00</p>
+                        <button><a class="eliminar"href="#">CANCELAR</a></button>
+                    </div>
+                </div>
+
+
+                <!--TERCERO AUTO-->
+                <div class="tarjeta">
+                    <div class="tarjeta__descripcion">
+                        <p><b>Codigo Cliente: </b>CL003</p>
+                        <p><b>Codigo Vehiculo: </b>VH001</p>
+                        <p><b>Fecha: </b>17/10/2020</p>
+                        <p><b>Punto de salida: </b>Surco</p>
+                        <p><b>Punto de llegada: </b>Surquillo</p>
+                        <p><b>Hora de recojo: </b>13:00</p>
+                        <p><b>Hora de entrega: </b>21:00</p>
+                        <button><a class="eliminar"href="#">CANCELAR</a></button>
+                    </div>
+                </div>
+
+                <!--CUARTO AUTO-->
+                <div class="tarjeta">
+                    <div class="tarjeta__descripcion">
+                        <p><b>Codigo Cliente: </b>CL004</p>
+                        <p><b>Codigo Vehiculo: </b>VH005</p>
+                        <p><b>Fecha: </b>30/10/2020</p>
+                        <p><b>Punto de salida: </b>Lima</p>
+                        <p><b>Punto de llegada: </b>Huancayo</p>
+                        <p><b>Hora de recojo: </b>08:00</p>
+                        <p><b>Hora de entrega: </b>23:00</p>
+                        <button><a class="eliminar"href="#">CANCELAR</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
 
 
@@ -29,6 +114,8 @@
             <p class="rights-text">© 2020 Empresa de Transporter Viaje ya!</p>
         </div>
     </footer>
+
+    <script src="../../js/controlReserva.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 

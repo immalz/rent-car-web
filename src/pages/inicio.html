@@ -111,16 +111,21 @@
                 <h1>Enterate de lo nuevo</h1>
                 <div class="borde"></div>
                 <p>Ingresa tu correo electronico para enterarte de promociones y novedades.</p>
-                <form action="" class="formulario-noticias">
-                    <input type="text" class="correo" placeholder="ingresa tu correo">
+                <form id="noticia" action="" class="formulario-noticias">
+                    <input type="email" class="correo" placeholder="ingresa tu correo" required>
                     <input type="submit" class="footerBtn" value="Enviar">
                 </form>
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        let enviar = document.getElementById('noticia');
+        enviar.addEventListener('submit', function() {
+            alert('Felicitaciones!, pronto recibira nuestras actualizaciones y promociones')
+        })
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</body>
 
 </html>

@@ -18,7 +18,14 @@
                 <div class="imgBx"><img src="../images/login.webp"></div>
                 <div class="formBx">
                     <form action="" id="formulario">
-                        <h2>Inicia Sesion</h2>
+                        <h2>
+
+
+                            <a class="tooltip" href="#">Inicia Sesion
+                                <i class="fas fa-info-circle"></i>
+                                <span class="tooltip-box">Los usuarios de login se encuentra en los archivos</span>
+                            </a>
+                        </h2>
                         <input id="usuario" type="text" name="usuario" placeholder="Nombre de Usuario" required>
                         <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required>
                         <input id="enviar" type="submit" name="" value="Ingresar">
@@ -62,14 +69,19 @@
                 <h1>Enterate de lo nuevo</h1>
                 <div class="borde"></div>
                 <p>Ingresa tu correo electronico para enterarte de promociones y novedades.</p>
-                <form action="" class="formulario-noticias">
-                    <input type="text" class="correo" placeholder="ingresa tu correo">
+                <form id="noticias" action="" class="formulario-noticias">
+                    <input type="email" class="correo" placeholder="ingresa tu correo" required>
                     <input type="submit" class="footerBtn" value="Enviar">
                 </form>
             </div>
         </div>
     </footer>
     <script type="text/javascript">
+        let noticias = document.getElementById('noticias');
+        noticias.addEventListener('submit', function() {
+            alert('Felicitaciones!, pronto recibira nuestras actualizaciones y promociones')
+        })
+
         function toggleForm() {
             let container = document.querySelector('.container');
             container.classList.toggle('active')

@@ -47,7 +47,20 @@ h1 {
 
 .contenido__imagen {
     width: 50%;
+    -webkit-animation: imagen 2s linear infinite;
     animation: imagen 2s linear infinite;
+}
+
+@-webkit-keyframes imagen {
+    from {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: none;
+    }
 }
 
 @keyframes imagen {

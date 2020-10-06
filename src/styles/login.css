@@ -41,6 +41,7 @@ section .container .user .imgBx img {
     left: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -149,6 +150,47 @@ section .container .singinBx .imgBx {
 
 section .container.active .singinBx .imgBx {
     left: -100%;
+}
+
+
+/*------------------------------------*/
+
+.tooltip {
+    font-weight: normal;
+    color: gray;
+    text-decoration: none;
+    position: relative;
+}
+
+.tooltip:hover .tooltip-box {
+    display: inline-block;
+}
+
+.tooltip-box {
+    display: none;
+    position: absolute;
+    background: #000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.tooltip-box::after {
+    content: "";
+    display: block;
+    border-top: 7px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: calc(50% - 7px);
 }
 
 @media (max-width: 991px) {
