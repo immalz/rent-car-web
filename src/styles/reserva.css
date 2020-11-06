@@ -8,6 +8,11 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+#terminos {
+    text-decoration: underline;
+    color: #000;
+}
+
 .centro {
     position: relative;
     width: 100%;

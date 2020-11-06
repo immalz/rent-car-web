@@ -68,6 +68,8 @@ input[type="checkbox"] {
 
 /*--------RESPONSIVE--------*/
 
+
+/* 
 @media (max-width: 1000px) {
     nav {
         padding: 0 40px 0 50px;
@@ -120,4 +122,4 @@ input[type="checkbox"] {
         background: none;
         color: rgb(70, 162, 161, 0.5);
     }
-}
+} */

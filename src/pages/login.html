@@ -17,7 +17,7 @@
             <div class="user singinBx">
                 <div class="imgBx"><img src="../images/login.webp"></div>
                 <div class="formBx">
-                    <form action="" id="formulario">
+                    <form action="../php/login.php" id="formulario" method="POST">
                         <h2>Inicia Sesion</h2>
                         <input id="usuario" type="text" name="usuario" placeholder="Nombre de Usuario" required>
                         <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required>
@@ -30,13 +30,13 @@
             </div>
             <div class="user singupBx">
                 <div class="formBx">
-                    <form action="../index.html">
+                    <form action="../php/registro.php" method="POST">
                         <h2>Crea una cuenta</h2>
                         <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
                         <input type="email" name="correo" placeholder="Correo electronico" required>
                         <input type="password" name="contraseña" placeholder="Contraseña" required>
                         <input type="password" name="repetir-contraseña" placeholder="Confirmar contraseña" required>
-                        <input type="submit" name="" value="Registrar">
+                        <input id="registrar" type="submit" name="" value="INGRESAR"></a>
                         <p class="signup">¿Ya tienes una cuenta?
                             <a id="registrar" href="#" onclick="toggleForm();">Inicia Sesion</a>
                         </p>
@@ -75,8 +75,8 @@
             container.classList.toggle('active')
         }
     </script>
-    <script type="text/javascript" src="../js/validarFormulario.js"></script>
 
+    <!-- <script type="text/javascript" src="../js/validarFormulario.js"></script> -->
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>

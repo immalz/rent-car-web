@@ -33,12 +33,13 @@
 }
 
 .tarjeta {
-    width: 500px;
-    height: 300px;
+    width: 300px;
+    min-height: 400px;
     display: flex;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    margin: 20px;
     background: var(--gris);
+    border-radius: 20px;
 }
 
 .tarjeta:hover {
@@ -46,15 +47,17 @@
 }
 
 .tarjeta__imagen {
-    width: 50%;
+    width: 100%;
+    height: 40%;
     justify-content: center;
     align-items: center;
 }
 
 .tarjeta__imagen img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     transition: .7s ease;
+    object-fit: cover;
 }
 
 .tarjeta__imagen img:hover {
@@ -62,7 +65,14 @@
 }
 
 .tarjeta__descripcion {
-    width: 50%;
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+}
+
+.tarjeta__descripcion .boton {
+    display: flex;
+    justify-content: center;
 }
 
 .tarjeta__descripcion h2 {
